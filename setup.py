@@ -11,7 +11,7 @@ setup(
         'redis==3.0.1',
     ],
     tests_require=['pytest', 'mock', 'factory_boy', 'moto'],
-    version = '1.0.7',
+    version = '1.0.8',
     description = 'A dynamodb common configuration abstraction',
     author='Paul Craciunoiu',
     author_email='pcraciunoiu@clearcareonline.com',
