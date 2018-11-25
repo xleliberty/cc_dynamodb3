@@ -464,8 +464,8 @@ def to_json(serialized):
 
 
 def return_different_fields_except(new, old, fields_to_ignore=None):
-    new_dict = dict(new.iteritems())
-    old_dict = dict(old.iteritems())
+    new_dict = dict(iteritems(new))
+    old_dict = dict(iteritems(old))
     fields_to_ignore = fields_to_ignore or []
     for field in fields_to_ignore:
         if field in new_dict:
@@ -473,7 +473,7 @@ def return_different_fields_except(new, old, fields_to_ignore=None):
         if field in old_dict:
             del old_dict[field]
     fields_to_delete = []
-    for field, value in old_dict.iteritems():
+    for field, value in iteritems(old_dict):
         if value == new_dict.get(field):
             fields_to_delete.append(field)
     for field in fields_to_delete:
