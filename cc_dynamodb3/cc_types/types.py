@@ -1,4 +1,5 @@
 import json
+from past.builtins import basestring
 
 from schematics.exceptions import ConversionError, ValidationError
 from schematics.types import BaseType

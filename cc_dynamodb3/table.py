@@ -1,5 +1,6 @@
 from functools import partial
 import operator
+from past.builtins import basestring
 
 from boto3.dynamodb.conditions import Key, Attr
 from botocore.exceptions import ClientError

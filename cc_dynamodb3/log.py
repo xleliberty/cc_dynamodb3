@@ -1,5 +1,5 @@
 import logging
-
+from past.builtins import basestring
 
 from .config import get_config
 
@@ -23,7 +23,7 @@ def log_data(message, logging_level=logging.DEBUG, exc_info=True, extra=None):
     :param exc_info: include exception info
     :param extra: extra data, useful for e.g. sentry
     """
-    if isinstance(logging_level, basestring):
+    if isinstance(logging_level, str):
         try:
             logging_level = getattr(logging, logging_level.upper())
         except AttributeError:
