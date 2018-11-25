@@ -12,7 +12,7 @@ setup(
         'future>=0.17.1',
     ],
     tests_require=['pytest', 'mock', 'factory_boy', 'moto'],
-    version = '1.0.8',
+    version = '1.0.9',
     description = 'A dynamodb common configuration abstraction',
     author='Paul Craciunoiu',
     author_email='pcraciunoiu@clearcareonline.com',
