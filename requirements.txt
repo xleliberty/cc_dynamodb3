@@ -1,5 +1,6 @@
-bunch>=1.0.1
-boto3==1.2.2
-PyYAML>=3.10
-schematics==1.1.1
-redis==2.10.5
+munch>=2.3.2
+boto3==1.9.50
+PyYAML>=3.13
+schematics==2.1.0
+redis==3.0.1
+future>=0.17.1

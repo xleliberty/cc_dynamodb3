@@ -6,6 +6,8 @@ import json
 import types
 import uuid
 
+from future.utils import iteritems
+
 from schematics.models import Model
 from schematics import types as fields
 
