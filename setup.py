@@ -8,7 +8,7 @@ setup(
         'boto3>=1.9.50',
         'PyYAML==3.13',
         'schematics==2.1.0',
-        'redis'=='3.0.1'
+        'redis==3.0.1',
     ],
     tests_require=['pytest', 'mock', 'factory_boy', 'moto'],
     version = '1.0.7',
